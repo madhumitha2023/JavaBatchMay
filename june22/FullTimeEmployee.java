@@ -1,9 +1,10 @@
 package june22;
 
-public class PartTimeEmployee extends Employee{
+public class FullTimeEmployee extends Employee {
+
     private int hours;
     private int salary;
-    public PartTimeEmployee(int empId, String name) {
+    public FullTimeEmployee(int empId, String name) {
         super(empId, name);
     }
 
@@ -16,6 +17,8 @@ public class PartTimeEmployee extends Employee{
     public void calculatePay() {
         super.calculatePay();
         int pay = salary * hours;
-        System.out.println("PartTime Salary: $"+ pay);
+        System.out.println("FullTime Salary: $"+ pay);
     }
+
+
 }
